@@ -20,7 +20,6 @@ LOCAL_SHARED_LIBRARIES += libutils
 LOCAL_SHARED_LIBRARIES += libhidlbase
 LOCAL_SHARED_LIBRARIES += libhidltransport
 LOCAL_SHARED_LIBRARIES += android.hardware.bluetooth@1.0
-LOCAL_SHARED_LIBRARIES += com.qualcomm.qti.ant@1.0
 LOCAL_SHARED_LIBRARIES += vendor.qti.hardware.fm@1.0
 LOCAL_SHARED_LIBRARIES += liblog
 
