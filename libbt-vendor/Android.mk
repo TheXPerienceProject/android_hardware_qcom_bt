@@ -21,7 +21,7 @@ ifeq ($(BOARD_HAVE_BLUETOOTH_QCOM),true)
 include $(CLEAR_VARS)
 
 #logging headers
-LOCAL_HEADER_LIBRARIES := libutils_headers
+LOCAL_HEADER_LIBRARIES := libutils_headers libbt-hci
 LOCAL_SRC_FILES := \
         src/bt_vendor_qcom.c \
         src/hardware.c \
@@ -46,6 +46,7 @@ LOCAL_C_INCLUDES += \
         $(LOCAL_PATH)/include \
         external/bluetooth/bluedroid/hci/include \
         vendor/qcom/opensource/commonsys/system/bt/hci/include \
+        system/bt/hci/include \
         $(TARGET_OUT_HEADERS)/bt/hci_qcomm_init \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
